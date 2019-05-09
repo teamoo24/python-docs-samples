@@ -83,8 +83,8 @@ DATABASES = {
         # 'ENGINE': 'django.db.backends.mysql' instead of the following.
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'polls',
-        'USER': os.getenv('DATABASE_USER'),
-        'PASSWORD': os.getenv('DATABASE_PASSWORD'),
+        'USER': os.getenv('admin'),
+        'PASSWORD': os.getenv('passpass'),
         'HOST': '127.0.0.1',
         'PORT': '5432',
     }

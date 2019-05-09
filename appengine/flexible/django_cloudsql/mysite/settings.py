@@ -84,8 +84,8 @@ DATABASES = {
         # 'ENGINE': 'django.db.backends.mysql' instead of the following.
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'polls',
-        'USER': '<your-database-user>',
-        'PASSWORD': '<your-database-password>',
+        'USER': 'admin',
+        'PASSWORD': 'passpass',
         # For MySQL, set 'PORT': '3306' instead of the following. Any Cloud
         # SQL Proxy instances running locally must also be set to tcp:3306.
         'PORT': '5432',
@@ -94,7 +94,7 @@ DATABASES = {
 # In the flexible environment, you connect to CloudSQL using a unix socket.
 # Locally, you can use the CloudSQL proxy to proxy a localhost connection
 # to the instance
-DATABASES['default']['HOST'] = '/cloudsql/<your-cloudsql-connection-string>'
+DATABASES['default']['HOST'] = '/cloudsql/sample-project-1-240000:asia-northeast1:polls-instance'
 if os.getenv('GAE_INSTANCE'):
     pass
 else:
@@ -121,7 +121,7 @@ USE_TZ = True
 # Fill in your cloud bucket and switch which one of the following 2 lines
 # is commented to serve static content from GCS
 # STATIC_URL = 'https://storage.googleapis.com/<your-gcs-bucket>/static/'
-STATIC_URL = '/static/'
+STATIC_URL = 'https://storage.googleapis.com/sampleproject_bucket/static/'
 # [END staticurl]
 
 STATIC_ROOT = 'static/'
