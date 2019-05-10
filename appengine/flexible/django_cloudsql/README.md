@@ -23,3 +23,5 @@ See our [Running Django in the App Engine Flexible Environment](https://cloud.go
 ## Licensing
 
 * See [LICENSE](LICENSE)
+
+##access address : https://sample-project-1-240000.appspot.com/
